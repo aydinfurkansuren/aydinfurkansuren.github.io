@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Songless Privacy Policy</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #ffffff;
+        --text: #1a1a1a;
+        --muted: #5b5b5b;
+        --border: #e6e6e6;
+        --accent: #2f6fed;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+        line-height: 1.6;
+      }
+      .wrap {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 48px 24px 96px;
+      }
+      h1 {
+        font-size: 28px;
+        margin-bottom: 4px;
+      }
+      .updated {
+        color: var(--muted);
+        font-size: 14px;
+        margin-bottom: 32px;
+      }
+      h2 {
+        font-size: 19px;
+        margin-top: 40px;
+        margin-bottom: 8px;
+        border-top: 1px solid var(--border);
+        padding-top: 24px;
+      }
+      h1 + p,
+      .updated + h2 {
+        border-top: none;
+        padding-top: 0;
+      }
+      p {
+        margin: 0 0 12px;
+      }
+      ul {
+        margin: 0 0 12px;
+        padding-left: 22px;
+      }
+      li {
+        margin-bottom: 6px;
+      }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      strong {
+        font-weight: 600;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 12px 0 20px;
+        font-size: 14px;
+      }
+      th,
+      td {
+        text-align: left;
+        padding: 8px 10px;
+        border: 1px solid var(--border);
+        vertical-align: top;
+      }
+      th {
+        background: #fafafa;
+        font-weight: 600;
+      }
+      code {
+        background: #f3f3f3;
+        padding: 1px 5px;
+        border-radius: 4px;
+        font-size: 0.9em;
+      }
+      footer {
+        margin-top: 48px;
+        padding-top: 24px;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Songless Privacy Policy</h1>
+      <p class="updated">Last updated: August 2, 2026</p>
+
+      <p>
+        Songless ("the app", "we", "us") is a music-guessing game published by
+        Aydin Furkan Suren. This policy explains what information the app
+        collects, why, and how it's handled. Songless is built to work without
+        an account, a name, an email address, or a login — the sections below
+        describe exactly what limited data it does use instead.
+      </p>
+
+      <h2>Information We Collect</h2>
+      <p>Songless collects the following categories of data:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Purpose</th>
+            <th>Stored where</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Anonymous identifier</td>
+            <td>
+              On first launch, the app silently creates an anonymous Firebase
+              Authentication identity tied to your install. There's no sign-up
+              screen and it isn't linked to your name, email, or Apple ID.
+            </td>
+            <td>Firebase (Google)</td>
+          </tr>
+          <tr>
+            <td>Randomly generated display name</td>
+            <td>
+              A nickname (e.g. "SilverFox42") auto-generated on first play, used
+              to identify you on the public leaderboard. You can change it
+              in-app.
+            </td>
+            <td>Firebase Firestore</td>
+          </tr>
+          <tr>
+            <td>Game results &amp; Elo rating</td>
+            <td>
+              Each round you finish is submitted to update your Elo rating and
+              leaderboard rank.
+            </td>
+            <td>Firebase Firestore &amp; Cloud Functions</td>
+          </tr>
+          <tr>
+            <td>Local game stats (streaks, win distribution)</td>
+            <td>
+              Tracks your personal play history for the in-app stats screen.
+            </td>
+            <td>On your device only (local storage), never transmitted</td>
+          </tr>
+          <tr>
+            <td>Purchase &amp; subscription status</td>
+            <td>
+              If you buy Songless Pro, purchase and entitlement data is
+              processed to unlock premium features and let you restore
+              purchases.
+            </td>
+            <td>RevenueCat &amp; Apple (App Store)</td>
+          </tr>
+          <tr>
+            <td>Device locale / storefront</td>
+            <td>
+              Used to fetch music charts and search results relevant to your
+              country and language.
+            </td>
+            <td>Not stored — used per request</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        Songless does <strong>not</strong> collect your name, email address,
+        phone number, contacts, photos, or precise location, and it does not
+        require you to create an account.
+      </p>
+
+      <h2>The Leaderboard Is Public</h2>
+      <p>
+        Your display name, Elo rating, and games-played count are visible to
+        other players on the global leaderboard. Your anonymous identifier,
+        purchase history, and local stats are never shown to other players.
+      </p>
+
+      <h2>Third-Party Services</h2>
+      <p>
+        Songless relies on the following third parties, each governed by its own
+        privacy policy:
+      </p>
+      <ul>
+        <li>
+          <strong>Firebase</strong> (Google) — anonymous authentication, the
+          leaderboard database, and the Cloud Functions that calculate Elo
+          ratings.
+          <a
+            href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noopener"
+            >Google Privacy Policy</a
+          >
+        </li>
+        <li>
+          <strong>RevenueCat</strong> — processes subscription purchases and
+          entitlement status for Songless Pro.
+          <a
+            href="https://www.revenuecat.com/privacy/"
+            target="_blank"
+            rel="noopener"
+            >RevenueCat Privacy Policy</a
+          >
+        </li>
+        <li>
+          <strong>Apple (App Store &amp; Apple Music/MusicKit)</strong> —
+          handles in-app purchase transactions and provides the song catalog,
+          chart, and preview data used in the game.
+          <a
+            href="https://www.apple.com/legal/privacy/"
+            target="_blank"
+            rel="noopener"
+            >Apple Privacy Policy</a
+          >
+        </li>
+      </ul>
+
+      <h2>Data Retention</h2>
+      <p>
+        Leaderboard and rating data is kept for as long as your anonymous
+        identity remains active. Local stats live only on your device and are
+        removed if you delete the app. You can request deletion of your
+        leaderboard data at any time — see Contact below.
+      </p>
+
+      <h2>Children's Privacy</h2>
+      <p>
+        Songless is not directed at children under 13 and does not knowingly
+        collect personal information from them.
+      </p>
+
+      <h2>Your Choices</h2>
+      <ul>
+        <li>
+          You can change your display name at any time from within the app.
+        </li>
+        <li>Deleting the app removes all locally stored stats.</li>
+        <li>
+          To request deletion of your leaderboard/rating data, contact us using
+          the details below.
+        </li>
+      </ul>
+
+      <h2>Changes to This Policy</h2>
+      <p>
+        We may update this policy as the app changes. Updates will be posted on
+        this page with a revised "Last updated" date.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about this policy or your data? Reach out at
+        <a href="mailto:afsuren@gmail.com">afsuren@gmail.com</a>.
+      </p>
+
+      <footer>Songless &middot; © 2026 Aydin Furkan Suren</footer>
+    </div>
+  </body>
+</html>
